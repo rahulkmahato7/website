@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul K. Mahato | Microelectronics & VLSI</title>
-    <meta name="description" content="Rahul K. Mahato — M.Tech in Microelectronics & VLSI at IIT Roorkee. Digital design, VLSI, FeFET and compute-in-memory research portfolio.">
+    <title>Rahul K Mahato</title>
+    <meta name="description" content="Rahul K Mahato — M.Tech in Microelectronics & VLSI at IIT Roorkee. Digital design, VLSI, FeFET and compute-in-memory research portfolio.">
     <meta name="theme-color" content="#0a1210">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -369,93 +369,6 @@
 
         footer { text-align: center; padding: 2.5rem 1rem; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--muted); border-top: 1px solid var(--line); }
 
-        /* --- Pookie popup --- */
-        .pookie-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(6, 10, 9, 0.65);
-            backdrop-filter: blur(3px);
-            -webkit-backdrop-filter: blur(3px);
-            z-index: 1999;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.4s ease;
-        }
-        .pookie-overlay.show { opacity: 1; pointer-events: auto; }
-        .pookie-toast {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            max-width: 320px;
-            width: 90%;
-            background: var(--surface);
-            border: 1px solid var(--trace-copper-dim);
-            border-radius: var(--radius);
-            box-shadow: 0 30px 60px var(--shadow);
-            padding: 1.3rem 1.4rem 1.4rem;
-            z-index: 2000;
-            transform: translate(-50%, -50%) scale(0.92);
-            opacity: 0;
-            pointer-events: none;
-            transition: transform 0.4s cubic-bezier(.2,.9,.25,1), opacity 0.4s ease;
-        }
-        .pookie-toast.show { transform: translate(-50%, -50%) scale(1); opacity: 1; pointer-events: auto; }
-        .pookie-toast::before {
-            content: '';
-            position: absolute; top: -1px; left: 14px;
-            width: 22px; height: 3px; background: var(--trace-copper); border-radius: 0 0 2px 2px;
-        }
-        .pookie-close {
-            position: absolute; top: 0.5rem; right: 0.6rem;
-            background: none; border: none; color: var(--muted); font-size: 1rem;
-            cursor: pointer; line-height: 1; padding: 0.2rem;
-        }
-        .pookie-close:hover { color: var(--text); }
-        .pookie-toast p.pookie-line {
-            font-family: 'JetBrains Mono', monospace;
-            color: var(--text);
-            font-size: 1.05rem;
-            font-weight: 700;
-            letter-spacing: 0.01em;
-            margin-top: 0.3rem;
-        }
-        .pookie-toast .we-tiny { font-size: 1em; font-weight: 700; color: var(--text); }
-        .pookie-question {
-            margin-top: 0.5rem;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.85rem;
-            color: var(--signal-cyan);
-        }
-        .pookie-actions { display: flex; gap: 0.6rem; margin-top: 0.9rem; }
-        .pookie-btn {
-            flex: 1;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            padding: 0.5rem 0.8rem;
-            border-radius: 2px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        .pookie-accept {
-            background: var(--trace-green);
-            color: var(--bg);
-            border: 1px solid var(--trace-green);
-            font-weight: 700;
-        }
-        .pookie-accept:hover { filter: brightness(1.1); }
-        .pookie-reject {
-            background: transparent;
-            color: var(--muted);
-            border: 1px solid var(--line);
-        }
-        .pookie-reject:hover { color: var(--danger); border-color: var(--danger); }
-        .pookie-fine {
-            margin-top: 0.7rem;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.68rem;
-            color: var(--muted);
-        }
-
         /* Animations */
         @keyframes typing { from { width: 0; } to { width: 100%; border-right: none; } }
         @keyframes blink { from, to { border-color: transparent; } 50% { border-color: var(--trace-copper); } }
@@ -567,10 +480,6 @@
         footer a { color:var(--muted); text-decoration:none; }
         footer a:hover { color:var(--trace-copper); }
 
-        /* Easter egg: Pookie is user-triggered, never an automatic interruption. */
-        .pookie-trigger { cursor:pointer; color:var(--muted); border:0; background:none; font:inherit; }
-        .pookie-trigger:hover { color:var(--trace-copper); }
-
         @media (max-width: 900px) {
             .nav-toggle { display:inline-flex; }
             .nav-container { position:relative; }
@@ -608,7 +517,6 @@
             .thesis-card { padding: 1.5rem; }
             .thesis-header h3 { font-size: 1.1rem; }
             .thesis-stats { grid-template-columns: repeat(2, 1fr); }
-            .pookie-toast { width: 85%; max-width: 320px; }
         }
     </style>
 </head>
@@ -647,10 +555,10 @@
             <circle cx="200" cy="580" r="4"></circle><circle cx="780" cy="560" r="4"></circle>
         </svg>
         <div class="header-content">
-            <img src="27d6944468f979d90b5e46f81a5bcfde.jpg" alt="Rahul K. Mahato profile photo" class="profile-photo" onerror="this.style.display='none';">
+            <img src="27d6944468f979d90b5e46f81a5bcfde.jpg" alt="Rahul K Mahato profile photo" class="profile-photo" onerror="this.style.display='none';">
             <div class="status-pill"><span class="dot"></span>STATUS: ONLINE — OPEN TO COLLAB</div>
             <span class="hero-kicker">M.TECH · MICROELECTRONICS &amp; VLSI · IIT ROORKEE</span>
-            <h1>Rahul K. Mahato</h1>
+            <h1>Rahul K Mahato</h1>
             <p class="subtitle"><span class="bracket">&lt;</span>Digital Design · VLSI · FeFET · Compute-in-Memory<span class="bracket">/&gt;</span></p>
             <div class="hero-tags">
                 <span class="hero-tag">RTL / VERILOG</span><span class="hero-tag">CMOS CIRCUITS</span>
@@ -671,7 +579,7 @@
         <h2>About Me</h2>
         <div class="about-grid">
             <div class="about-text card" style="padding:1.75rem;">
-                <p>I’m <strong>Rahul K. Mahato</strong>, an Electronics &amp; Communication Engineer and M.Tech candidate in <strong>Microelectronics &amp; VLSI</strong> at IIT Roorkee.</p>
+                <p>I’m <strong>Rahul K Mahato</strong>, an Electronics &amp; Communication Engineer and M.Tech candidate in <strong>Microelectronics &amp; VLSI</strong> at IIT Roorkee.</p>
                 <p>My work sits at the intersection of <strong>digital design, transistor-level circuits, memory-centric computing and emerging non-volatile devices</strong>. I enjoy taking an architecture from a logic idea to a transistor-level implementation and simulation.</p>
                 <p>My current research focuses on <strong>FeFET-based compute-in-memory (CIM)</strong>, including an 8×8 analog CIM array for 8-bit MAC operations, alongside SRAM-based Boolean in-memory computing.</p>
                 <div class="about-facts">
@@ -799,7 +707,7 @@
                 <span class="project-tag">DISSERTATION · M.TECH · MICROELECTRONICS &amp; VLSI</span>
                 <h3>Design and Simulation of FeFET-Based 8-Bit CIM Array MAC Operations</h3>
                 <p class="thesis-meta">
-                    <i class="fas fa-user-graduate"></i> Rahul Kumar Mahato (24534010)
+                    <i class="fas fa-user-graduate"></i> Rahul K Mahato (24534010)
                     &nbsp;·&nbsp;
                     <i class="fas fa-chalkboard-teacher"></i> Supervised by Prof. Sudeb Dasgupta &amp; Dr. Sourajeet Roy
                     &nbsp;·&nbsp;
@@ -864,19 +772,18 @@
         <span class="designator">U6 — GET IN TOUCH</span>
         <h2>Contact Me</h2>
         <div class="contact-form card">
-            <p class="contact-note">Use the form below to compose an email in your default mail client. Replace the <code>CONTACT_EMAIL</code> constant in the script with your actual address before publishing.</p>
-            <form id="contactForm">
+            <p class="contact-note">Send me a message directly from this form. I will receive it in my email inbox. Replace the <code>CONTACT_EMAIL</code> constant in the script with your actual address before publishing.</p>
+            <form id="contactForm" novalidate>
                 <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
                 <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required></div>
                 <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
-                <button type="submit" class="btn">Compose Message <i class="fas fa-paper-plane"></i></button>
+                <button type="submit" class="btn" id="contactSubmit">Send Message <i class="fas fa-paper-plane"></i></button>
                 <div class="form-status" id="formStatus" aria-live="polite"></div>
             </form>
         </div>
         <div class="social-label">CONNECT</div>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/rahulkmahato/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <button class="social-links a" type="button" id="pookieTrigger" aria-label="Pookie Easter egg"><i class="fas fa-bolt"></i></button>
         </div>
     </section>
 
@@ -889,21 +796,11 @@
         <div>Built with Verilog-grade stubbornness.</div>
     </footer>
 
-    <!-- Pookie Easter egg: intentionally user-triggered -->
-    <div class="pookie-overlay" id="pookieOverlay"></div>
-    <div class="pookie-toast" id="pookieToast" role="status">
-        <button class="pookie-close" id="pookieClose" aria-label="Dismiss">✕</button>
-        <p class="pookie-line"><span class="we-tiny">we</span> accept all Pookie</p>
-        <p class="pookie-question">are you a pookie?</p>
-        <div class="pookie-actions">
-            <button class="pookie-btn pookie-accept" id="pookieAccept">Accept</button>
-            <button class="pookie-btn pookie-reject" id="pookieReject">Reject</button>
-        </div>
-        <p class="pookie-fine" id="pookieFine">terms and conditions: there are none.</p>
-    </div>
-
     <script>
-        const CONTACT_EMAIL = 'YOUR_EMAIL@example.com';
+        // FormSubmit delivers contact-form submissions directly to this inbox.
+        // Replace this with your real email address before publishing.
+        const CONTACT_EMAIL = 'rahulkmahato.rkm@gmail.com';
+        const CONTACT_ENDPOINT = `https://formsubmit.co/ajax/${encodeURIComponent(CONTACT_EMAIL)}`;
 
         document.addEventListener('DOMContentLoaded', () => {
             const nav = document.querySelector('nav');
@@ -963,11 +860,11 @@
                 const details = {
                     comparator: {
                         title: 'Low-Power Dynamic Comparator',
-                        html: '<p><strong>Objective:</strong> Design a low-power dynamic comparator for ADC applications.</p><p><strong>Approach:</strong> Modified double-tail topology simulated in Cadence at 90 nm, 1 V and 25 MHz.</p><p><strong>Reported results:</strong> 2.70 µW power consumption and 0.108 pJ energy efficiency.</p><p><strong>Team:</strong> Rahul Kumar Mahato, Mahak Rawat, Praval Pratap Singh.</p>'
+                        html: '<p><strong>Objective:</strong> Design a low-power dynamic comparator for ADC applications.</p><p><strong>Approach:</strong> Modified double-tail topology simulated in Cadence at 90 nm, 1 V and 25 MHz.</p><p><strong>Reported results:</strong> 2.70 µW power consumption and 0.108 pJ energy efficiency.</p><p><strong>Team:</strong> Rahul K Mahato, Mahak Rawat, Praval Pratap Singh.</p>'
                     },
                     filters: {
                         title: 'Active RC Filters',
-                        html: '<p><strong>Objective:</strong> Create active RC filters with independent tuning of pole frequency, damping and transfer ratio.</p><p><strong>Implementations:</strong> Low-pass, high-pass and band-pass filters simulated in LTspice.</p><p><strong>Team:</strong> Rahul Kumar Mahato, Mahak Rawat, Praval Pratap Singh.</p>'
+                        html: '<p><strong>Objective:</strong> Create active RC filters with independent tuning of pole frequency, damping and transfer ratio.</p><p><strong>Implementations:</strong> Low-pass, high-pass and band-pass filters simulated in LTspice.</p><p><strong>Team:</strong> Rahul K Mahato, Mahak Rawat, Praval Pratap Singh.</p>'
                     }
                 }[btn.dataset.project];
                 projectTitle.textContent = details.title;
@@ -993,52 +890,59 @@
             closePdfBtn?.addEventListener('click', closePdf);
             pdfOverlay?.addEventListener('click', closePdf);
 
-            // Contact form -> mail client.
-            document.getElementById('contactForm')?.addEventListener('submit', e => {
+            // Contact form -> FormSubmit -> your inbox.
+            document.getElementById('contactForm')?.addEventListener('submit', async e => {
                 e.preventDefault();
+                const form = e.currentTarget;
+                const status = document.getElementById('formStatus');
+                const submit = document.getElementById('contactSubmit');
                 const name = document.getElementById('name').value.trim();
                 const email = document.getElementById('email').value.trim();
                 const message = document.getElementById('message').value.trim();
-                const status = document.getElementById('formStatus');
+
+                if (!name || !email || !message) {
+                    status.textContent = 'Please fill in all fields.';
+                    return;
+                }
                 if (CONTACT_EMAIL === 'YOUR_EMAIL@example.com') {
                     status.textContent = 'Set CONTACT_EMAIL in this file before publishing.';
                     return;
                 }
-                const subject = encodeURIComponent(`Portfolio enquiry from ${name}`);
-                const body = encodeURIComponent(`Name: ${name}
-Email: ${email}
 
-${message}`);
-                window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-                status.textContent = 'Opening your email client…';
-            });
+                submit.disabled = true;
+                submit.innerHTML = 'Sending… <i class="fas fa-spinner fa-spin"></i>';
+                status.textContent = '';
 
-            // Pookie Easter egg: never automatic.
-            const toast = document.getElementById('pookieToast');
-            const overlay = document.getElementById('pookieOverlay');
-            const closeBtn = document.getElementById('pookieClose');
-            const acceptBtn = document.getElementById('pookieAccept');
-            const rejectBtn = document.getElementById('pookieReject');
-            const fine = document.getElementById('pookieFine');
-            const openPookie = () => { toast.classList.add('show'); overlay.classList.add('show'); };
-            const closePookie = () => { toast.classList.remove('show'); overlay.classList.remove('show'); };
-            document.getElementById('pookieTrigger')?.addEventListener('click', openPookie);
-            closeBtn.addEventListener('click', closePookie);
-            overlay.addEventListener('click', closePookie);
-            acceptBtn.addEventListener('click', () => {
-                fine.textContent = 'correct answer. proceed to being a pookie.';
-                acceptBtn.disabled = true; rejectBtn.disabled = true; setTimeout(closePookie, 1600);
-            });
-            rejectBtn.addEventListener('click', () => {
-                fine.textContent = "rejected. you're still a pookie though.";
-                acceptBtn.disabled = true; rejectBtn.disabled = true; setTimeout(closePookie, 1600);
+                const payload = new FormData();
+                payload.append('name', name);
+                payload.append('email', email);
+                payload.append('message', message);
+                payload.append('_subject', `Portfolio enquiry from ${name}`);
+                payload.append('_template', 'table');
+                payload.append('_captcha', 'false');
+
+                try {
+                    const response = await fetch(CONTACT_ENDPOINT, {
+                        method: 'POST',
+                        headers: { 'Accept': 'application/json' },
+                        body: payload
+                    });
+                    if (!response.ok) throw new Error('Submission failed');
+
+                    form.reset();
+                    status.textContent = 'Message sent successfully. Thank you for reaching out!';
+                } catch (error) {
+                    status.textContent = 'Could not send the message. Please try again later.';
+                } finally {
+                    submit.disabled = false;
+                    submit.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
+                }
             });
 
             document.addEventListener('keydown', e => {
                 if (e.key === 'Escape') {
                     projectOverlay.classList.remove('show'); projectModal.classList.remove('show');
                     pdfOverlay.classList.remove('show'); pdfModal.classList.remove('show');
-                    closePookie();
                 }
             });
 
